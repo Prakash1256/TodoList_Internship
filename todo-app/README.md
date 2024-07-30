@@ -30,3 +30,19 @@ Follow these instructions to set up and run the application locally.
 ```bash
 git clone https://github.com/Prakash1256/TodoList_Internship.git
 cd todo-app
+
+
+# Create React App (CRA)
+ First, ensure you have Node.js installed on your system. You can download and install it from Node.js website.
+Open your terminal.<br>
+To create a new React app using CRA, run the following command:
+
+```bash
+npx create-react-app todo-app
+```
+Replace my-app with your preferred project name.<br>
+Navigate to your project directory:
+
+```bash
+cd todo-app
+```
