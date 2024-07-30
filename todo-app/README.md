@@ -41,6 +41,10 @@ Navigate to your project directory:
 cd todo-app
 ```
 
+```bash
+npm install
+```
+
 ## Getting Started
 
 Follow these instructions to set up and run the application locally.
