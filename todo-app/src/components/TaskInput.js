@@ -56,14 +56,14 @@ const TaskInput = () => {
   className="btn btn-primary"
   onClick={handleAddTask}
   style={{
-    backgroundColor: '#007bff', // Primary color
-    color: '#fff', // Text color
-    border: 'none', // Remove border
-    padding: '10px 20px', // Vertical and horizontal padding
-    borderRadius: '5px', // Rounded corners
-    fontSize: '16px', // Font size
-    cursor: 'pointer', // Pointer cursor on hover
-    transition: 'background-color 0.3s', // Smooth transition for background color
+    backgroundColor: '#007bff', 
+    color: '#fff', 
+    border: 'none',
+    padding: '10px 20px', 
+    borderRadius: '5px', 
+    fontSize: '16px', 
+    cursor: 'pointer', 
+    transition: 'background-color 0.3s', 
     marginTop:"10px",
   }}
 >
