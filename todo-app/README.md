@@ -28,5 +28,5 @@ Follow these instructions to set up and run the application locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone 
+git clone https://github.com/Prakash1256/TodoList_Internship.git
 cd todo-app
