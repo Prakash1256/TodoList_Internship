@@ -13,6 +13,7 @@ This is a simple To-Do application built with React.js, HTML, CSS, JavaScript, a
 - **Delete Tasks**: Users can delete tasks.
 - **Task Filtering**: Tasks can be filtered by status (e.g., All, Completed, Pending).
 - **Redux for State Management**: The application uses Redux for managing the global state of tasks.
+- **Click the toggle** : switch between Dark Mode and Light Mode.
 
 
 ![image](https://github.com/user-attachments/assets/3ce95d45-e632-4b95-8c36-9151fe36a13b)
