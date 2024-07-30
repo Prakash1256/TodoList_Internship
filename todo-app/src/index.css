@@ -1,0 +1,328 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:rgb(52,58,64) !important; 
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.navbar-brand h1 {
+  margin-left: 10px;
+  font-size: 1.8rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: var(--text-hover-color);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  --bg-color: #343a40;
+  --text-color: #f8f9fa;
+  --text-hover-color: #adb5bd;
+}
+
+body.light-mode {
+  --bg-color: #f8f9fa;
+  --text-color: #343a40;
+  --text-hover-color: #495057;
+}
+
+/* Icon Styles */
+.navbar-brand .faBars {
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+
+.nav-link .faSearch,
+.nav-link .faTh,
+.nav-link .faSun,
+.nav-link .faMoon {
+  font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* Styles  TaskDisplay */
+.task-display {
+  padding: 20px;
+  background-color: rgb(188, 192, 186);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.task-display h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.task-display ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-display li {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-display li:last-child {
+  border-bottom: none;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .task-display {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .task-display h2 {
+    font-size: 1.4rem;
+  }
+
+  .task-display li {
+    font-size: 1.1rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  .task-display {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .task-display h2 {
+    font-size: 1.3rem;
+  }
+
+  .task-display li {
+    font-size: 1rem;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .task-display {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .task-display h2 {
+    font-size: 1.2rem;
+  }
+
+  .task-display li {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .task-display {
+    margin: 5px;
+    padding: 8px;
+  }
+
+  .task-display h2 {
+    font-size: 1.1rem;
+  }
+
+  .task-display li {
+    font-size: 0.8rem;
+    padding: 4px;
+  }
+}
+
+/* Styles TaskChart */
+.task-chart-container {
+  
+  width: 300px;
+  height: 300px; 
+  position: relative;
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.task-chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+.task-chart-total {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+.task-chart-doughnut {
+  width: 100%;
+  height: 100%;
+}
+
+.task-chart-legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.task-chart-legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.task-chart-legend-item span {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #333; 
+}
+
+.task-chart-legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+
+
+/*  Styles  Task List */
+
+.task-list {
+  position: absolute;
+  top: 70px;
+  padding: 50px;
+  background-color:rgb(52),58,64;
+  border-radius: 8px;
+  }
+
+.category-section {
+  margin-bottom: 20px;
+}
+
+.category-section h3 {
+  font-size: 1.6rem;
+  color: white;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.task-item button {
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.task-item button:hover {
+  background-color: #c82333;
+}
+
+/* Media Queries for TaskList */
+@media (max-width: 768px) {
+  .task-list {
+    padding: 10px;
+  }
+
+  .category-section h3 {
+    font-size: 1.4rem;
+  }
+
+  .task-item {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .task-item button {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
